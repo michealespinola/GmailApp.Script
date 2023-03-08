@@ -13,7 +13,6 @@ function GmailTrash() {
     'older_than:7d  AND is:read AND -is:starred AND label:amazon.com "answer to your question"',                                     // Amazon questions
     'older_than:7d  AND is:read AND -is:starred AND label:curate-la"',                                                               // Curate LA weeks
     'older_than:7d  AND is:read AND -is:starred AND label:eventful AND subject:"this weekend"',                                      // Eventful weekends
-    'older_than:7d  AND is:sent AND  to:(submit.s4sjyikaka8kxmvu@spam.spamcop.net)',                                                 // SPAM REPORTS
     'older_than:1h  AND is:read AND -is:starred AND label:amazon.com "Check out today’s list of Giveaways"',                         // Amazon giveaways
     'older_than:1h  AND is:read AND -is:starred AND label:amazon.com "You are subscribed to receive this email because you follow"', // Amazon following updates        
     'older_than:1h  AND is:read AND -is:starred AND label:amazon.com "new update from Amazon"',                                      // Amazon updates
@@ -22,6 +21,7 @@ function GmailTrash() {
     'older_than:1h  AND is:read AND -is:starred AND label:uptime-robot',                                                             // Uptime Robot notifications
 //  'older_than:1h  AND is:read AND -is:starred AND to:me "You have been unsubscribed from"',                                        // Unsubscriptions
     '                   is:read AND -is:starred AND label:torrents',                                                                 // Torrent notifications
+    '                   is:sent AND  to:(submit.s4sjyikaka8kxmvu@spam.spamcop.net)',                                                 // Spam Reports
   ];                                                                                                                                 //
 
   var threads = [];                                                                                                                  // WORK WITH GROUPS OF 250 ITEMS
